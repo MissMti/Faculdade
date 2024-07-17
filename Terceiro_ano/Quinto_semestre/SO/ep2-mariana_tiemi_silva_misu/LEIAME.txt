@@ -1,0 +1,31 @@
+AUTOR:
+Marina Tiemi Silva Misu, NUSP:12542842, mariana.tiemism@usp.br
+
+DESCRIÇÃO:
+Esse programa tem como objetivo simular uma das várias modalidades de ciclismo realizada em velodromos que é a corrida por eliminacao
+
+COMO COMPILAR E EXECUTAR:
+Para criar os executavies, basta usar o seguinte comando:
+make
+
+Para executar o programa é preciso do comando:
+./ep2 <d>  <k>  <-debug>
+
+O "d" sendo o tamanho do velodromo, "k" a quantidade de ciclistas e "-debug" é uma opcao que o usuario pode escolher usar, mas nao é obrigatorio. 
+
+Ex1:
+./ep2 10 5
+
+Nesse caso o programa rodará em sua versão padrão com 5 cilistas e um velodromo de tamanho 10.
+
+Ex2:
+./ep2 10 5 -debug
+
+Nesse caso o programa rodará em sua versão "debug" com 5 cilistas e um velodromo de tamanho 10.
+
+
+DEPENDÊNCIAS:
+Versão do montador: x86_64
+Versão do compilador: NASM version 2.14.02
+Versão do linker: GNU ld (GNU Binutils for Ubuntu) 2.34
+SO: Linux GNU/Linux
