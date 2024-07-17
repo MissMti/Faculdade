@@ -1,0 +1,62 @@
+AUTOR:
+Marina Tiemi Silva Misu, NUSP:12542842, mariana.tiemism@usp.br
+
+COMO COMPILAR E EXECUTAR:
+Para criar os executavies, basta usar o seguinte comando:
+make
+
+Para executar o programa é preciso do comando:
+./ep3
+
+
+DEPENDÊNCIAS:
+Versão do montador: x86_64
+Versão do compilador: NASM version 2.14.02
+Versão do linker: GNU ld (GNU Binutils for Ubuntu) 2.34
+SO: Linux GNU/Linux
+
+Resultados dos testes: (alores aproximados a 3 casas decimais)
+1. Sistema de arquivos vazio
+1. Copia de um arquivo de 1MB no ‘/’
+[0.273;0.379] média=0.326
+2. Copia de um arquivo de 10MB no ‘/’
+[1.243;1.453] média=1.348
+3. Copia de um arquivo de 30MB no ‘/’
+[4.386;5.120] média=4.753
+4. Remocao de um arquivo de 1MB no ‘/’
+[0.000;0.001] média=0.001
+5. Remocao de um arquivo de 10MB no ‘/’
+[0.013;0.016] média=0.014
+6. Remocao de um arquivo de 30MB no ‘/’
+[0.428;0.646] média=0.537
+
+2. Sistema de arquivos com 10MB ocupados
+1. Copia de um arquivo de 1MB no ‘/’
+[0.289;0.425] média=0.357
+2. Copia de um arquivo de 10MB no ‘/’
+[1.326;1.644] média=1.485
+3. Copia de um arquivo de 30MB no ‘/’
+[4.564;5.402] média=4.983
+4. Remocao de um arquivo de 1MB no ‘/’
+[0.001;0.001] média=0.001
+5. Remocao de um arquivo de 10MB no ‘/’
+[0.013;0.015] média=0.014
+6. Remocao de um arquivo de 30MB no ‘/’
+[0.351;0.595] média=0.473
+
+3. Sistema de arquivos com 50MB ocupados
+1. Copia de um arquivo de 1MB no ‘/’
+[0.297;0.437] média=0.367
+2. Copia de um arquivo de 10MB no ‘/’
+[1.439;1.579] média=1.509
+3. Copia de um arquivo de 30MB no ‘/’
+[4.680;5.228] média=4.954
+4. Remocao de um arquivo de 1MB no ‘/’
+[0.000;0.001] média=0.001
+5. Remocao de um arquivo de 10MB no ‘/’
+[0.013;0.016] média=0.014
+6. Remocao de um arquivo de 30MB no ‘/’
+[0.454;0.578] média=0.516
+
+Link: https://youtu.be/Aqh_gGBFEK4
+
