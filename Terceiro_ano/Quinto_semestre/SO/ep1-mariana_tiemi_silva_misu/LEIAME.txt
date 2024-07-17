@@ -1,0 +1,37 @@
+AUTOR:
+Marina Tiemi Silva Misu, NUSP:12542842, mariana.tiemism@usp.br
+
+DESCRIÇÃO:
+Esse programa tem dois objetivos, implementar um shell (newsh), permitindo a interacao do usuario com o sistema operacional, e implementar um simulador de processos com tres algoritmos de escalonamento(Shortest Job First, Round-Robin e Escalonamento com prioridade).
+
+COMO COMPILAR E EXECUTAR:
+Para criar os executavies, basta usar o seguinte comando:
+make
+
+Para abrir o newsh:
+./newsh
+
+Dentro do newsh, pode realizar os comandos solicitados pelo enunciado diretamente pela linha de comando do newsh e para chamar o simulador de processos, basta:
+./ep1 <Valor que explica qual processador o usuario quer usar> <arquivo trace de entrada> <nome do arquvo de saida>
+
+Os valores correspondentes a cada escalonador é:
+Shortest Job First=1
+Round-Robin=2
+Escalonamento com prioridade=3
+
+Exemplo em que o usuário quer invocar o arquivo a.txt com o escalonador Round-Robin e geraro arquivo de saida saida.txt:
+./ep1 2 a.txt saida.txt 
+
+TESTES:
+Junto com o programa temos três arquivos de teste, a.txt, b.txt e c.txt.
+
+OBSERVACOES:
+Para a execução do programa é preciso que os processos do arquivo trace estajam em ordem de menor T0 para maior e que os valores sejam inteiros.
+Para mudar o valor do Quantum para o Round-Robin, precisa mudar o valor na linha 10 do arquvio ep1.c
+Para os resultados dos testes, eu tomei que o valor da preempcao como as vezes em que um processo é suspenso para o próximo executar, o que significa que o valor de preempcao do Shortest Job First sempre será 0.
+
+DEPENDÊNCIAS:
+Versão do montador: x86_64
+Versão do compilador: NASM version 2.14.02
+Versão do linker: GNU ld (GNU Binutils for Ubuntu) 2.34
+SO: Linux GNU/Linux

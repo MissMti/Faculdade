@@ -1,0 +1,5 @@
+proc1 20 0 4
+proc2 5 1 4
+proc3 20 4 1
+proc4 20 5 2
+proc5 20 7 1
